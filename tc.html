@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="tc.css">
+</head>
+
+<body>
+    <div class="converter">
+        <h2>Temperature Converter</h2>
+        <h6>Converted temperature will then be displayed with the correct unit.</h6>
+        <label for="fU"></label>
+        <select id="fU">
+            <option value="C">Celcious</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+            
+        </select>
+        <label for="tU"></label>
+        <select id="tU">
+            <option value="C">Celcious</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+           
+        </select>
+        <label for="temp"></label>
+        <input type="number" id="temp" placeholder="Enter Temperature">
+        <button onclick="converterfunc()">Click to Convert</button>
+
+        <label for="res"></label>
+        <input type="text" id="res"placeholder="Converted result is displayed here" readonly>
+    </div>  
+    <script src="tc.js"></script>
+</body>
+
+</html>
